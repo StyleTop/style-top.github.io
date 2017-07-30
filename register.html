@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang=ru>
+<head>
+<meta charset=utf-8>
+ <link rel="shortcut icon" type="image/png" href="favicon.png">
+ <link rel="stylesheet" href="./css/animate.min.css">
+<title>Style-Top Заказное окно</title>
+    <style>
+       @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
+body{
+  background-color:#000000;
+  font-family: 'Open Sans', sans-serif;  
+  padding-top:100px; 
+}
+p{
+  color:rgba(0,0,0,.7);
+  width:100%;
+  margin: 100px auto;
+  font-weight:300;
+  text-align:center;   
+}
+
+a{
+  text-decoration:none;
+  color:#0079f2;
+}
+.container{
+    max-width: 32em;
+	margin: 0 auto;
+	padding: 1.2em; 
+}
+        
+/* Базовые стили формы */
+form{
+  margin:0 auto;
+  max-width:95%;
+  box-sizing:border-box;
+  padding:40px;
+  border-radius:5px; 
+  background:RGBA(255,255,255,1);
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);  
+}
+/* Стили полей ввода */
+.form-control{
+    background: rgba(0,0,0, 100);
+    color:;
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px; 
+  padding:10px;
+  margin-bottom:30px;  
+}
+.message:focus,
+.form-control:focus{
+
+  outline:none;
+   border:#2E3192 2px solid;
+   color:#2E3192;
+}
+/* Стили текстового поля */
+.message{
+	background: rgba(0,0,0, 100); 
+    width:100%;
+    height: 120px;
+    border:rgba(0,0,0,.3) 2px solid;
+    box-sizing:border-box;
+    -moz-border-radius: 3px;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    display:block;
+    padding:10px;
+    margin-bottom:30px;
+    overflow:hidden;
+}
+/* Базовые стили кнопки */
+.applicationButton, form-control{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 0px solid;
+  box-sizing:border-box;
+  padding:10px;
+  background:#000000;
+  color:#FFF;
+  font-family: 'Open Sans', sans-serif;  
+  font-weight:400;
+  font-size: 16pt;
+  transition:background .4s;
+  cursor:pointer;
+}
+/* Изменение фона кнопки при наведении */
+.applicationButton:hover{
+  background:#2E3192;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+  <div class="col-lg-6">
+    <form class="form" action="https://formspree.io/konoval.gal@yandex.ru"
+      method="POST">
+        <div class="form-group">
+          <label for="exampleInputName2">Ваше имя</label>
+           <input type="text" class="form-control" id="exampleInputName2" name="name" placeholder="Введите ваше имя">
+         </div>
+          <div class="form-group">
+           <label for="exampleInputEmail2">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail2" name="emfil" placeholder="Введите ваш Email">
+          <input type="hidden" name="_next" value="//index.html" />
+        </div>
+
+       <button type="submit" class="applicationButton">Заказать</button>
+     </form>
+
+
+
+    </div>   
+    <div class="col-sm-6">
+        <img src="img/settings.gif" class="img-responsive mg-lg" width="367" 
+ alt="Analyse and Improve" style="position:absolute; top: 60px; left: 320px; right: 30px ;" />
+      </div>  
+      <div class="col-sm-6">
+        <img src="img/settings.gif" class="img-responsive mg-lg" width="367" 
+ alt="Analyse and Improve" style="position:absolute; top: 60px; left: 1200px; right: 30px ;" />
+
+      </div>  
+            <div class="col-sm-6">
+        <img src="img/reh.png" class="img-responsive mg-lg" width="367" 
+ alt="Analyse and Improve" style="position:absolute; top: 440px; left: 320px; right: 30px ;" />
+      </div>
+            <div class="col-sm-3">
+        <div class="mos">
+          <a href="index.html" style="position:absolute; top: 520px; left: 765px; right: 3px ;"><img src="img/badge@3x.gif" width="370" height="160"></a></img>
+        </div>
+      </div>
+</body>
+</html>
